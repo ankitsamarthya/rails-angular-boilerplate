@@ -2,5 +2,8 @@
 //= require angular-route
 //= require angular-ui-router
 //= require angular-resource
+//= require angular-animate
+//= require angular-aria
+//= require angular-material
 //= require angular-rails-templates
 //= require_tree .

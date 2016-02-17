@@ -1,4 +1,4 @@
-angular.module('appname', ['ngRoute', 'ngResource', 'templates', 'ui.router'])
+angular.module('appname', ['ngRoute', 'ngResource', 'templates', 'ui.router', 'ngAnimate', 'ngAria', 'ngMaterial'])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
   $stateProvider
