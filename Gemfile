@@ -27,6 +27,10 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers'
 
 gem 'responders'
+
+gem 'devise'
+gem 'devise_token_auth' # Token based authentication for Rails JSON APIs
+gem 'omniauth'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

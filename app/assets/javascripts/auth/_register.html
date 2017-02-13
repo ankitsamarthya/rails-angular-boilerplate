@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+
+        <div class="main">
+            <br/>
+            <br/>
+            <div layout="row" layout-sm="column" layout-align="space-around" ng-show="showLoading">
+                <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+            </div>
+
+            <h3 class="auth">Please Sign Up, or <a href="#" ui-sref="login">Login</a></h3>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <md-button class="md-raised md-accent m-0 btn-block">Facebook</md-button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <md-button class="md-raised md-warn m-0 btn-block">Google</md-button>
+                </div>
+            </div>
+            <div class="login-or">
+                <hr class="hr-or">
+                <span class="span-or">or</span>
+            </div>
+
+            <form role="form" ng-init="registrationForm = {}" ng-hide="showLoading">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" ng-model="registrationForm.email" />
+                </div>
+                <!--<div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" ng-model="registrationForm.name" />
+                </div>
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" class="form-control" ng-model="registrationForm.mobile" />
+                </div>-->
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" ng-model="registrationForm.password" autocomplete="off" />
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" ng-model="registrationForm.password_confirmation" autocomplete="off" />
+                </div>
+                <div class="checkbox pull-right">
+                    <md-button class="md-raised md-primary m-0" ng-click="handleRegBtnClick()">Register</md-button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
